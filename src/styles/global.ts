@@ -178,8 +178,6 @@ const GlobalStyles = createGlobalStyle`
       }
 
       body {
-        font-family: ${theme.font.family01};
-        font-size: ${theme.font.sizes.medium};
         background-color: transparent;
       }
     `}

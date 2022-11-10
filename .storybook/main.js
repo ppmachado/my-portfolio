@@ -1,15 +1,22 @@
 module.exports = {
-  "stories": [
-    "../stories/**/*.stories.mdx",
-    "../stories/**/*.stories.@(js|jsx|ts|tsx)"
+  features: {
+    postcss: false,
+  },
+  typescript: {
+    reactDocgen: 'none'
+  },
+  stories: [
+    "../src/components/**/stories.tsx",
+    "../src/templates/**/stories.tsx"
   ],
-  "addons": [
+  addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions"
   ],
-  "framework": "@storybook/react",
-  "core": {
-    "builder": "@storybook/builder-webpack5"
+  framework: "@storybook/react",
+  webpackFinal: (config) => {
+    config.resolve.modules.push(`${process.cwd()}/src`)
+    return config
   }
 }
