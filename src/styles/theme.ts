@@ -40,37 +40,16 @@ export default {
     primaryDarkest: '#191A1A',
     backButton: '#D9D9D9',
 
-    gray: '#000',
-
-    iconsProfile: '#303232',
-    mediumGrey: '#6C6464',
-    backgroundGrey: '#DBD6D6',
-    inputGrey: '#E0DEDE',
-    inputBorder: '#B4B1B1',
-    closeGrey: '#797E7E',
-    darkBack: '#484949',
-    mediumBack: '#EEE8E8',
-    lightBack: '#F9F4F4',
     orange: '#EC840B',
     yesGreen: '#3CA318',
     yesBorder: '#2C810E',
     noRed: '#F67C74',
     noBorder: '#CF5048',
-    starYellow: '#FFC700',
-    starBorder: '#D0A300',
     white: '#FFFFFF',
     black: '#000000',
-
-    feedbackDark: '#3241A1',
-    feedbackDarkest: '#212E89',
-    successLight: '#12AF46',
-    successMedium: '#00A03E',
-    errorLight: '#FB3C1E',
-    errorMedium: '#ED3020',
-    darkPurple: '#11001C',
-    purple: '#27073c',
-    yellow: '#ddd25b',
-    yellowLight: '#fff9ba'
+    background: '#595957',
+    yellow: '#FFC81A',
+    icons: '#333333'
   },
   gradient: {
     defaultMedium: `linear-gradient(135deg, rgba(109, 157, 249, 0.66) 0%, #6D9DF9 100%), #FFFFFF`
