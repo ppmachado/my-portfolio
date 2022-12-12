@@ -1,57 +1,84 @@
-import React, { useState } from 'react'
-import Button from '@mui/material/Button'
-import Dialog from '@mui/material/Dialog'
-import DialogActions from '@mui/material/DialogActions'
-import DialogContent from '@mui/material/DialogContent'
-import DialogContentText from '@mui/material/DialogContentText'
-import DialogTitle from '@mui/material/DialogTitle'
+import * as S from './styles'
 
 export type ModalType =
-  | 'settings'
-  | 'favoritePlaces'
-  | 'addedPlaces'
-  | 'peopleIFollow'
-  | 'logOut'
+  | 'html5'
+  | 'css3'
+  | 'javascript'
+  | 'typescript'
+  | 'react'
+  | 'next'
+  | 'styled-comp'
+  | 'git'
+  | 'github'
+  | 'storybook'
+  | 'graphql'
   | undefined
 
-export default function AlertDialog() {
-  const [open, setOpen] = useState(false)
+export type ModalProps = {
+  open?: boolean
+  onClose?: () => void
+  type?: ModalType
+}
 
-  const handleClickOpen = () => {
-    setOpen(true)
-  }
-
-  const handleClose = () => {
-    setOpen(false)
+function ModalIcons({ open, type, onClose, ...props }: ModalProps) {
+  const switchType = () => {
+    switch (type) {
+      case 'html5': {
+        return <S.Span>oie</S.Span>
+      }
+      case 'css3': {
+        return <p>aloha</p>
+      }
+      case 'javascript': {
+        return <p />
+      }
+      case 'typescript': {
+        return <p />
+      }
+      case 'react': {
+        return <p />
+      }
+      case 'next': {
+        return <p />
+      }
+      case 'styled-comp': {
+        return <p />
+      }
+      case 'git': {
+        return <p />
+      }
+      case 'github': {
+        return <p />
+      }
+      case 'storybook': {
+        return <p />
+      }
+      case 'graphql': {
+        return <p />
+      }
+      default: {
+        return <></>
+      }
+    }
   }
 
   return (
-    <div>
-      <Button variant="outlined" onClick={handleClickOpen}>
-        Open alert dialog
-      </Button>
-      <Dialog
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="alert-dialog-title"
-        aria-describedby="alert-dialog-description"
+    <S.Modal
+      open={open !== undefined ? open : false}
+      onClose={() => !!onClose && onClose()}
+      aria-labelledby="modal-modal-title"
+      aria-describedby="modal-modal-description"
+      {...props}
+    >
+      <S.Box
+        sx={{
+          padding: '2px'
+        }}
       >
-        <DialogTitle id="alert-dialog-title">
-          {"Use Google's location service?"}
-        </DialogTitle>
-        <DialogContent>
-          <DialogContentText id="alert-dialog-description">
-            Let Google help apps determine location. This means sending
-            anonymous location data to Google, even when no apps are running.
-          </DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose}>Disagree</Button>
-          <Button onClick={handleClose} autoFocus>
-            Agree
-          </Button>
-        </DialogActions>
-      </Dialog>
-    </div>
+        {switchType()}
+      </S.Box>
+    </S.Modal>
   )
 }
+
+export default ModalIcons
