@@ -1,4 +1,6 @@
 import styled, { css } from 'styled-components'
+import UseModal from 'components/Modal'
+
 import { Html5 } from '@styled-icons/boxicons-logos/Html5'
 import { Css3 } from '@styled-icons/boxicons-logos/Css3'
 import { JsSquare } from '@styled-icons/fa-brands/JsSquare'
@@ -11,11 +13,15 @@ import { Git } from '@styled-icons/boxicons-logos/Git'
 import { Storybook } from '@styled-icons/simple-icons/Storybook'
 import { Graphql } from '@styled-icons/simple-icons/Graphql'
 
+export const Modal = styled(UseModal)``
+
 export const UseGraphql = styled(Graphql)`
   ${({ theme }) => css`
     width: 35px;
     color: ${theme.colors.white};
     margin: 5px 10px 5px 5px;
+
+    cursor: pointer;
   `}
 `
 
@@ -24,6 +30,8 @@ export const UseStorybook = styled(Storybook)`
     width: 35px;
     color: ${theme.colors.white};
     margin: 5px 10px 5px 3px;
+
+    cursor: pointer;
   `}
 `
 
@@ -32,6 +40,8 @@ export const UseGit = styled(Git)`
     width: 35px;
     color: ${theme.colors.white};
     margin: 5px 10px 5px 5px;
+
+    cursor: pointer;
   `}
 `
 
@@ -40,6 +50,8 @@ export const UseGithub = styled(Github)`
     width: 40px;
     color: ${theme.colors.white};
     margin: 5px 10px 5px 4px;
+
+    cursor: pointer;
   `}
 `
 
@@ -48,6 +60,8 @@ export const UseStyled = styled(Styledcomponents)`
     width: 40px;
     color: ${theme.colors.white};
     margin: 5px 10px 5px 0;
+
+    cursor: pointer;
   `}
 `
 
@@ -56,6 +70,8 @@ export const UseReact = styled(ReactLogo)`
     width: 40px;
     color: ${theme.colors.white};
     margin: 5px 10px 5px 0;
+
+    cursor: pointer;
   `}
 `
 
@@ -64,6 +80,8 @@ export const UseNext = styled(Nextdotjs)`
     width: 35px;
     color: ${theme.colors.white};
     margin: 5px 10px 5px 5px;
+
+    cursor: pointer;
   `}
 `
 
@@ -72,6 +90,8 @@ export const UseTypescript = styled(Typescript)`
     width: 30px;
     color: ${theme.colors.white};
     margin: 5px 10px 5px 5px;
+
+    cursor: pointer;
   `}
 `
 
@@ -80,6 +100,8 @@ export const UseJs = styled(JsSquare)`
     width: 30px;
     color: ${theme.colors.white};
     margin: 5px 10px 5px 5px;
+
+    cursor: pointer;
   `}
 `
 
@@ -88,6 +110,8 @@ export const UseCss3 = styled(Css3)`
     width: 40px;
     color: ${theme.colors.white};
     margin: 5px 10px 5px 0;
+
+    cursor: pointer;
   `}
 `
 
@@ -96,6 +120,8 @@ export const UseHtml5 = styled(Html5)`
     width: 40px;
     color: ${theme.colors.white};
     margin: 5px 10px 5px 0;
+
+    cursor: pointer;
   `}
 `
 
@@ -114,3 +140,9 @@ export const Content = styled.div`
 `
 
 export const IconsDiv = styled.div``
+
+export const Nav = styled.ul``
+
+export const List = styled.li`
+  list-style: none;
+`
