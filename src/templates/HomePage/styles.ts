@@ -81,8 +81,9 @@ export const Text = styled.h3`
     font-size: ${theme.font.sizes.xsmall};
     font-weight: 500;
     line-height: 23px;
-    margin: 20px;
 
+    margin: 20px;
+    margin-right: 40px;
     text-align: justify;
   `}
 `
@@ -108,10 +109,14 @@ export const Subtitle = styled.h2`
 `
 
 export const GridTitle = styled.div`
-  display: grid;
-  grid-template-columns: 40% 60%;
+  display: flex;
+  flex-direction: row;
+  flex-basis: auto;
+  flex-wrap: wrap;
+  width: 100%;
 
-  justify-items: center;
+  gap: 70px;
+  justify-content: center;
   align-items: center;
 `
 export const GridText = styled.div`
