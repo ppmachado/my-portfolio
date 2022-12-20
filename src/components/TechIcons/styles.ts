@@ -138,7 +138,7 @@ export const Content = styled.div`
   display: grid;
   grid-template-columns: 12% 12% 12%;
   margin-top: 10px;
-  margin-right: 50px;
+  margin-right: 40px;
   gap: 5px;
 `
 
