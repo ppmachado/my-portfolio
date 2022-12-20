@@ -12,6 +12,7 @@ const HomePage = () => {
     a.click()
     document.body.removeChild(a)
   }
+
   return (
     <S.Wrapper>
       <S.Content>
@@ -43,6 +44,7 @@ const HomePage = () => {
           />
         </S.GridIcons>
         <S.Break />
+
         <S.GridTitle>
           <S.Image src="img/croods-pp.png" />
           <S.DivHead>
@@ -51,16 +53,17 @@ const HomePage = () => {
             <S.Subtitle>and I{"'"}m a front-end developer</S.Subtitle>
           </S.DivHead>
         </S.GridTitle>
+
         <S.GridText>
           <S.UseTech />
           <S.Text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Born and raised in the Brazilian Amazon, where we used to live
+            without technology and internet access, I only started to know more
+            about the tech world when I was older. Starting this journey in
+            2019, I worked with video editions and graphic design, when I soon
+            discovered the UI/UX and web development area. I{"'"}m studying
+            front-end development since 2021 and currently popping my own
+            platform! Feel free to make contact and download my resume :)
           </S.Text>
         </S.GridText>
       </S.Content>

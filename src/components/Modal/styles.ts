@@ -4,11 +4,11 @@ import Dialog from '@mui/material/Dialog'
 
 export const Box = styled(UseBox)`
   ${({ theme }) => css`
-    border-radius: 8px;
+    border-radius: 10px;
     border: none;
     outline: ${theme.colors.primaryLight};
 
-    margin: 20px;
+    margin: 13px;
   `}
 `
 
@@ -16,12 +16,22 @@ export const Span = styled.span`
   ${({ theme }) => css`
     font-family: ${theme.font.family02};
     font-size: ${theme.font.sizes.small};
+    line-height: 27px;
+    font-weight: 500;
+
     text-align: justify;
+    align-self: center;
+    justify-content: center;
 
     margin: 20px 20px;
+    display: block;
   `}
 `
 
 export const Modal = styled(Dialog)`
   margin: 20px;
+
+  box-shadow: 11px 13px 45px -15px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 11px 13px 45px -15px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 11px 13px 45px -15px rgba(0, 0, 0, 0.5);
 `
