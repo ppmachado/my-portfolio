@@ -63,7 +63,7 @@ export const Content = styled.div`
     max-width: 1000px;
     margin: auto;
 
-    display: flex-block;
+    display: block;
   `}
 `
 
