@@ -12,6 +12,7 @@
    },
   "extends": [
       "eslint:recommended",
+      "next",
       "plugin:react/recommended",
       "plugin:@typescript-eslint/eslint-recommended",
       "plugin:@typescript-eslint/recommended",
@@ -41,7 +42,8 @@
       "react/react-in-jsx-scope": "off",
       "@typescript-eslint/explicit-module-boundary-types": "off",
       "@typescript-eslint/no-non-null-assertion": "off",
-      "@next/next/no-page-custom-font": "off"
+      "@next/next/no-page-custom-font": "off",
+      "prettier/prettier": "warn"
 
   }
 }
