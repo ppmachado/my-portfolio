@@ -171,9 +171,9 @@ const GlobalStyles = createGlobalStyle`
       }
     }
 
-    ${() => css`
+    ${({ theme }) => css`
       html {
-        font-size: 62.5%;
+        font-size: ${theme.font.sizes.small}
         scroll-behavior: smooth;
       }
 
