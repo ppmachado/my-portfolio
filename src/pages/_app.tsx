@@ -10,6 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
       <Head>
         <title>Web Developer - Paula Machado</title>
+        <link rel="icon" type="image/png" href="/img/tech-icon.png" />
       </Head>
       <GlobalStyle />
     </ThemeProvider>
