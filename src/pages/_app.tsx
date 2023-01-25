@@ -11,6 +11,10 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>Web Developer - Paula Machado</title>
         <link rel="icon" type="image/png" href="/img/tech-icon.png" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        ></meta>
       </Head>
       <GlobalStyle />
     </ThemeProvider>
