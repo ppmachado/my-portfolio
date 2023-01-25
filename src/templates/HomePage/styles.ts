@@ -51,7 +51,7 @@ export const Wrapper = styled.div`
   ${({ theme }) => css`
     background: ${theme.colors.background};
     max-width: 100%;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
   `}
 `
@@ -60,10 +60,11 @@ export const Content = styled.div`
   ${({ theme }) => css`
     background: ${theme.colors.background};
     width: 100%;
-    max-width: 1000px;
+    max-width: 1024px;
     margin: auto;
 
     display: block;
+    padding-bottom: 50px;
   `}
 `
 
@@ -78,12 +79,12 @@ export const Text = styled.h3`
   ${({ theme }) => css`
     color: ${theme.colors.white};
     font-family: ${theme.font.family02};
-    font-size: ${theme.font.sizes.xsmall};
+    font-size: ${theme.font.sizes.xxxsmall};
     font-weight: 500;
     line-height: 23px;
 
     margin: 20px;
-    margin-right: 40px;
+    margin-right: 100px;
     text-align: justify;
   `}
 `
@@ -103,7 +104,7 @@ export const Subtitle = styled.h2`
   ${({ theme }) => css`
     color: ${theme.colors.white};
     font-family: ${theme.font.family02};
-    font-size: ${theme.font.sizes.small};
+    font-size: ${theme.font.sizes.xsmall};
     font-weight: 500;
   `}
 `
@@ -121,7 +122,7 @@ export const GridTitle = styled.div`
 `
 export const GridText = styled.div`
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 35% 65%;
 
   justify-content: center;
   align-items: center;
