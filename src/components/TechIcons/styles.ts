@@ -132,14 +132,14 @@ export const Wrapper = styled.div`
 `
 
 export const Content = styled.div`
-  justify-content: end;
+  justify-content: center;
   align-items: center;
 
   display: grid;
   grid-template-columns: 12% 12% 12%;
   margin-top: 10px;
-  margin-right: 40px;
-  gap: 5px;
+  margin-left: 70px;
+  gap: 12px;
 `
 
 export const IconsDiv = styled.div``
