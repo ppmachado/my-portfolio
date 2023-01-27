@@ -1,4 +1,5 @@
 import * as S from './styles'
+
 import { useState } from 'react'
 import { ModalType } from 'components/Modal'
 
