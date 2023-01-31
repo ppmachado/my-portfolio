@@ -140,6 +140,13 @@ export const Content = styled.div`
   margin-top: 10px;
   margin-left: 70px;
   gap: 12px;
+
+  @media (max-width: 630px) {
+    grid-template-columns: 50% 50%;
+  }
+  @media (max-width: 800px) {
+    gap: 20px;
+  }
 `
 
 export const IconsDiv = styled.div``
