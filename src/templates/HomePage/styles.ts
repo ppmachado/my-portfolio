@@ -90,6 +90,11 @@ export const Text = styled.h3`
     margin: 20px;
     margin-right: 100px;
     text-align: justify;
+
+    @media (max-width: 600px) {
+      font-size: ${theme.font.sizes.smaller};
+      margin-right: 50px;
+    }
   `}
 `
 
