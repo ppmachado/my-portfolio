@@ -136,6 +136,12 @@ export const GridTitle = styled.div`
   gap: 70px;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 600px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `
 export const GridText = styled.div`
   display: grid;
