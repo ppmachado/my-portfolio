@@ -149,6 +149,11 @@ export const GridText = styled.div`
 
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 600px) {
+    margin-top: 20px;
+    gap: 15px;
+  }
 `
 
 export const DivHead = styled.div`
