@@ -73,6 +73,10 @@ export const Image = styled.img`
   height: auto;
 
   justify-self: center;
+
+  @media (max-width: 780px) {
+    width: 250px;
+  }
 `
 
 export const Text = styled.h3`
