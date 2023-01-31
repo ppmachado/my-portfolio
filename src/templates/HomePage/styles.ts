@@ -73,6 +73,10 @@ export const Image = styled.img`
   height: auto;
 
   justify-self: center;
+
+  @media (max-width: 780px) {
+    width: 250px;
+  }
 `
 
 export const Text = styled.h3`
@@ -86,6 +90,11 @@ export const Text = styled.h3`
     margin: 20px;
     margin-right: 100px;
     text-align: justify;
+
+    @media (max-width: 600px) {
+      font-size: ${theme.font.sizes.smaller};
+      margin-right: 50px;
+    }
   `}
 `
 
@@ -97,6 +106,10 @@ export const Title = styled.h1`
     font-weight: 500;
 
     padding: 20px;
+
+    @media (max-width: 550px) {
+      font-size: ${theme.font.sizes.large};
+    }
   `}
 `
 
@@ -106,6 +119,10 @@ export const Subtitle = styled.h2`
     font-family: ${theme.font.family02};
     font-size: ${theme.font.sizes.xsmall};
     font-weight: 500;
+
+    @media (max-width: 550px) {
+      font-size: ${theme.font.sizes.xxsmall};
+    }
   `}
 `
 
@@ -119,6 +136,12 @@ export const GridTitle = styled.div`
   gap: 70px;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 600px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `
 export const GridText = styled.div`
   display: grid;
@@ -126,11 +149,23 @@ export const GridText = styled.div`
 
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 600px) {
+    margin-top: 20px;
+    gap: 15px;
+  }
 `
 
 export const DivHead = styled.div`
   display: grid;
   grid-template-rows: auto;
+
+  @media (max-width: 600px) {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    margin-left: 30px;
+  }
 `
 
 export const Break = styled.hr`

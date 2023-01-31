@@ -15,7 +15,7 @@ export const Box = styled(UseBox)`
 export const Span = styled.span`
   ${({ theme }) => css`
     font-family: ${theme.font.family02};
-    font-size: ${theme.font.sizes.small};
+    font-size: ${theme.font.sizes.xxxsmall};
     line-height: 27px;
     font-weight: 500;
 
