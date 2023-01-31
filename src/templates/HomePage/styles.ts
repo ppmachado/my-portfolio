@@ -119,6 +119,10 @@ export const Subtitle = styled.h2`
     font-family: ${theme.font.family02};
     font-size: ${theme.font.sizes.xsmall};
     font-weight: 500;
+
+    @media (max-width: 550px) {
+      font-size: ${theme.font.sizes.xxsmall};
+    }
   `}
 `
 
