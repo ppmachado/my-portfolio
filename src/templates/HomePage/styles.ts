@@ -106,6 +106,10 @@ export const Title = styled.h1`
     font-weight: 500;
 
     padding: 20px;
+
+    @media (max-width: 550px) {
+      font-size: ${theme.font.sizes.large};
+    }
   `}
 `
 
