@@ -159,6 +159,13 @@ export const GridText = styled.div`
 export const DivHead = styled.div`
   display: grid;
   grid-template-rows: auto;
+
+  @media (max-width: 600px) {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    margin-left: 30px;
+  }
 `
 
 export const Break = styled.hr`
