@@ -25,6 +25,10 @@ export const Span = styled.span`
 
     margin: 20px 20px;
     display: block;
+
+    @media (max-width: 770px) {
+      font-size: ${theme.font.sizes.smaller};
+    }
   `}
 `
 

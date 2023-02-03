@@ -62,7 +62,7 @@ const HomePage = () => {
             about the tech world when I was older. Starting this journey in
             2019, I worked with video editions and graphic design, when I soon
             discovered the UI/UX and web development area. I{"'"}m studying
-            front-end development since 2021 and currently popping my own
+            front-end development since 2020 and currently popping my own
             platform! Feel free to make contact and download my resume :)
           </S.Text>
         </S.GridText>
