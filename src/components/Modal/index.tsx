@@ -72,7 +72,7 @@ function ModalIcons({ open, type, onClose, ...props }: ModalProps) {
             made to front-end developers and based on UI components. It is
             maintained by Meta and a big community of other companies and
             developers. Can be used to develop single-pages, mobile or
-            server-rendered applications with frameworks, like NextJS.{' '}
+            server-rendered applications with frameworks, like NextJS.
           </S.Span>
         )
       }
@@ -144,7 +144,7 @@ function ModalIcons({ open, type, onClose, ...props }: ModalProps) {
             those queries with your existing data. It provides a complete and
             understandable description of the data in your API, giving clients
             the power to ask for exactly what they need, making it easier to
-            evolve APIs over time.{' '}
+            evolve APIs over time.
           </S.Span>
         )
       }
